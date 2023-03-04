@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/commentprofile"
+        android:layout_width="@dimen/_60mdp"
+        android:layout_height="@dimen/_60mdp"
+        android:layout_marginStart="14dp"
+        android:layout_marginTop="14dp"
+        android:src="@drawable/einsten"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView15"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="3dp"
+        android:layout_marginTop="18dp"
+        android:layout_marginEnd="3dp"
+        android:text="MR. vivek penuli mention you in a comment"
+        android:textColor="#201a1b"
+        android:textSize="@dimen/_16mdp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/commentprofile"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView16"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="4 hour ago"
+        android:textSize="@dimen/_14mdp"
+        app:layout_constraintEnd_toEndOf="@+id/textView15"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/commentprofile"
+        app:layout_constraintTop_toBottomOf="@+id/textView15" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

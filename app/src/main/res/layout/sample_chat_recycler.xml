@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/senderpic"
+        android:layout_width="@dimen/_55mdp"
+
+        android:layout_height="@dimen/_55mdp"
+        android:layout_marginStart="@dimen/_5mdp"
+        android:layout_marginTop="@dimen/_7mdp"
+        android:src="@drawable/einsten"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="@+id/senderpic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/senderpic"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/userchatname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_5mdp"
+            android:layout_marginTop="@dimen/_15mdp"
+            android:text="Vivek Penuli"
+            android:textColor="@color/md_theme_dark_onSecondary"
+            android:textSize="@dimen/_15mdp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/messagelast"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_2mdp"
+            android:layout_marginStart="@dimen/_5mdp"
+            android:text="Last Message"
+            android:textSize="@dimen/_10mdp" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

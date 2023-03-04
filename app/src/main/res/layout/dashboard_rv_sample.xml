@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_marginTop="@dimen/_10mdp"
+    app:cardElevation="@dimen/_16mdp"
+    app:cardCornerRadius="@dimen/_22mdp"
+    android:layout_marginLeft="@dimen/_5mdp"
+    android:layout_marginRight="@dimen/_5mdp"
+    android:layout_height="wrap_content">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        android:background="#D2DAFF">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/post_profile_image"
+            android:layout_width="@dimen/_50mdp"
+            android:layout_height="@dimen/_60mdp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="@dimen/_8mdp"
+            android:src="@drawable/download"
+            app:civ_border_color="#FF000000"
+
+            app:civ_border_width="1dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/postuserName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:text="vivek_penuli"
+            android:textSize="@dimen/_16mdp"
+            android:textStyle="bold"
+
+            app:layout_constraintBottom_toBottomOf="@+id/post_profile_image"
+            app:layout_constraintStart_toEndOf="@+id/post_profile_image"
+            app:layout_constraintTop_toTopOf="@+id/post_profile_image"
+            app:layout_constraintVertical_bias="0.33999997" />
+
+        <TextView
+            android:id="@+id/postprofession"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="4dp"
+
+            android:text="StudentUnion"
+            app:layout_constraintStart_toEndOf="@+id/post_profile_image"
+            app:layout_constraintTop_toBottomOf="@+id/postuserName" />
+
+        <ImageView
+            android:id="@+id/imageView10"
+            android:layout_width="26dp"
+            android:layout_height="33dp"
+            android:layout_marginTop="24dp"
+
+            android:layout_marginEnd="16dp"
+            android:background="?attr/selectableItemBackground"
+            android:clickable="true"
+            android:focusable="true"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/ic_baseline_more_vert_24" />
+
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardView3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="9dp"
+            app:cardCornerRadius="@dimen/_12mdp"
+            app:cardElevation="@dimen/_22mdp"
+            app:layout_constraintTop_toBottomOf="@+id/textView4"
+            tools:layout_editor_absoluteX="16dp">
+
+            <ImageView
+                android:id="@+id/post_postImg"
+
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_230mdp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/einsten" />
+        </androidx.cardview.widget.CardView>
+
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_8mdp"
+            android:layout_marginTop="12dp"
+            android:textSize="@dimen/_16mdp"
+            android:visibility="gone"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/postprofession" />
+
+
+        <TextView
+            android:id="@+id/like"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:drawablePadding="@dimen/_3mdp"
+
+            android:layout_marginTop="@dimen/_5mdp"
+            android:drawableLeft="@drawable/ic_baseline_thumb_up_off_alt_24"
+            android:text="178"
+            android:textSize="@dimen/_13mdp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/cardView3" />
+
+        <TextView
+            android:id="@+id/comment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="@dimen/_5mdp"
+            android:drawableLeft="@drawable/ic_baseline_comment_24"
+            android:drawablePadding="@dimen/_3mdp"
+            android:text="18"
+            android:textSize="@dimen/_14mdp"
+            app:layout_constraintStart_toEndOf="@+id/like"
+            app:layout_constraintTop_toBottomOf="@+id/cardView3" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>

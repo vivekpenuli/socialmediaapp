@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F1F0F4"
+    tools:context=".Postphoto_Activity">
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/_7mdp"
+        android:layout_marginTop="@dimen/_8mdp"
+        android:text="Create Post"
+        android:textSize="@dimen/_18mdp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/post"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="148dp"
+
+        android:layout_marginTop="2dp"
+        android:layout_marginEnd="3dp"
+        android:text="Post"
+        android:textSize="@dimen/_11mdp"
+        app:layout_constraintBottom_toBottomOf="@+id/textView6"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textView6"
+        app:layout_constraintTop_toTopOf="@+id/textView6"
+        app:layout_constraintVertical_bias="0.473" />
+
+    <View
+        android:id="@+id/view5"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/_1mdp"
+        android:background="@color/md_theme_dark_surfaceVariant"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/post" />
+
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/senderpic"
+        android:layout_width="@dimen/_55mdp"
+        android:layout_height="@dimen/_55mdp"
+        android:layout_marginTop="5dp"
+        android:src="@drawable/einsten"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view5" />
+
+    <TextView
+        android:id="@+id/postusername"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="13dp"
+        android:text="vivek"
+        android:textColor="@color/md_theme_dark_shadow"
+        android:textSize="@dimen/_16mdp"
+        android:textStyle="bold"
+
+        app:layout_constraintStart_toEndOf="@+id/senderpic"
+        app:layout_constraintTop_toTopOf="@+id/senderpic" />
+
+    <TextView
+        android:id="@+id/postuserprofession"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+
+        android:text="President"
+        android:textSize="@dimen/_13mdp"
+        app:layout_constraintEnd_toEndOf="@+id/postusername"
+        app:layout_constraintHorizontal_bias="0.4"
+        app:layout_constraintStart_toEndOf="@+id/senderpic"
+        app:layout_constraintTop_toBottomOf="@+id/postusername" />
+
+    <EditText
+        android:id="@+id/posttext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:background="@android:color/transparent"
+        android:ems="10"
+        android:gravity="top"
+
+        android:hint="Whats on your mind"
+       android:inputType="textMultiLine"
+        android:maxLength="200"
+
+        android:textColor="@color/md_theme_dark_outline"
+        android:textSize="@dimen/_17mdp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/senderpic" />
+
+    <ImageView
+        android:id="@+id/postuserimage"
+        android:layout_width="@dimen/_44mdp"
+        android:layout_height="@dimen/_34mdp"
+        android:layout_marginEnd="3dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/ic_baseline_image_search_24_12" />
+
+    <View
+        android:id="@+id/view6"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/_2mdp"
+        android:background="@color/cardview_dark_background"
+        app:layout_constraintBottom_toTopOf="@+id/postuserimage"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        android:layout_marginBottom="@dimen/_29mdp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/postuserimage"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/_16mdp"
+        android:text="Add To Your Post"
+        android:textColor="@color/md_theme_light_onPrimaryContainer"
+        android:layout_marginLeft="@dimen/_9mdp"
+        app:layout_constraintBottom_toBottomOf="@+id/postuserimage"
+        app:layout_constraintEnd_toStartOf="@+id/postuserimage"
+        app:layout_constraintHorizontal_bias="0.032"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view6"
+        app:layout_constraintVertical_bias="0.619" />
+
+    <ImageView
+        android:id="@+id/imageView7"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:scaleType="centerCrop"
+        android:visibility="gone"
+        app:layout_constraintBottom_toTopOf="@+id/view6"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/posttext"
+        app:srcCompat="@drawable/einsten" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

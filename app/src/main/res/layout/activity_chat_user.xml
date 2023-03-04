@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+android:background="@color/md_theme_dark_onSurface"
+    tools:context=".ChatUserActivity">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/chat"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/linear"
+        android:layout_below="@+id/materialToolbar2" >
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+    <LinearLayout
+        android:id="@+id/linear"
+        android:background="@drawable/circlepost"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/etmessage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text="Enter Message"
+            android:textSize="@dimen/_18mdp"
+            tools:ignore="TouchTargetSizeCheck" />
+
+        <ImageView
+            android:id="@+id/send"
+            android:layout_width="@dimen/_3mdp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.5"
+            app:srcCompat="@drawable/play" />
+
+    </LinearLayout>
+
+    <com.google.android.material.appbar.MaterialToolbar
+        android:id="@+id/materialToolbar2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <ImageView
+                android:id="@+id/baclk"
+                android:layout_width="31dp"
+                android:layout_height="28dp"
+                android:backgroundTint="#E8E3E3"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/ic_baseline_arrow_back_24" />
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/senderpic"
+                android:layout_width="@dimen/_50mdp"
+                android:layout_marginTop="@dimen/_1mdp"
+android:layout_marginStart="@dimen/_4mdp"
+                android:layout_height="@dimen/_48mdp"
+                android:src="@drawable/einsten"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/baclk"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/sendername"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Vivek Penuli"
+                android:layout_marginStart="@dimen/_5mdp"
+                android:textColor="@color/md_theme_light_surfaceVariant"
+                android:textSize="@dimen/_16mdp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/senderpic"
+                app:layout_constraintTop_toTopOf="parent" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </com.google.android.material.appbar.MaterialToolbar>
+
+
+</RelativeLayout>

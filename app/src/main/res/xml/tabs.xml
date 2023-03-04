@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Tab xmlns:android="http://schemas.android.com/apk/res/android">
+    <tab
+        drawable="@drawable/homenavigationicon"
+        text="@string/home" />
+
+    <tab
+        drawable="@drawable/searchnavigationicon"
+        text="@string/search" />
+
+    <tab
+        drawable="@drawable/chat"
+        text="@string/chat" />
+
+    <tab
+        drawable="@drawable/notificationicon"
+        text="@string/notification" />
+
+    <tab
+        drawable="@drawable/userhomeicon"
+        text="@string/user" />
+
+</Tab>

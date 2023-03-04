@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#6FEDCEE7"
+    android:backgroundTint="#F4B6B6">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/usercard"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="@dimen/_32mdp"
+        app:cardElevation="@dimen/_18mdp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/loginpic"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_250mdp"
+            android:src="@drawable/newone" />
+
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/welcome"
+        android:layout_width="wrap_content"
+        android:layout_height="36dp"
+
+        android:layout_marginTop="16dp"
+        android:text="Welcome To Maitri"
+
+        android:textSize="@dimen/_22mdp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/usercard" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/username"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="22dp"
+
+        android:layout_marginTop="17dp"
+        android:layout_marginEnd="22dp"
+        android:hint="User Email"
+
+        app:boxBackgroundMode="outline"
+        app:endIconMode="clear_text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/welcome"
+        app:startIconDrawable="@drawable/ic_baseline_person_24">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/emailogin"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textEmailAddress" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/userpassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="22dp"
+        android:layout_marginTop="17dp"
+        android:layout_marginEnd="22dp"
+        android:hint="Password"
+
+        app:boxBackgroundMode="outline"
+        app:endIconMode="password_toggle"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/username"
+        app:startIconDrawable="@drawable/ic_baseline_lock_open_24">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/passlogin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/loginuser"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/circlepost"
+        android:backgroundTint="#C7D9DF"
+        android:text="Login"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/userpassword" />
+
+    <TextView
+        android:id="@+id/textView17"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Create Account :"
+        android:textSize="@dimen/_12mdp"
+        app:layout_constraintEnd_toEndOf="@+id/loginuser"
+        app:layout_constraintHorizontal_bias="0.795"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/loginuser" />
+
+    <TextView
+        android:id="@+id/gotologin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Join Here"
+        android:textColor="#19287E"
+        android:textSize="@dimen/_12mdp"
+        app:layout_constraintBottom_toBottomOf="@+id/textView17"
+        app:layout_constraintStart_toEndOf="@+id/textView17" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

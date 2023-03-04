@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/_80mdp"
+
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        app:cardCornerRadius="@dimen/_12mdp"
+        android:layout_height="wrap_content"
+        app:cardElevation="@dimen/_4mdp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" >
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+
+            android:layout_height="wrap_content"
+            android:background="@color/cardview_dark_background"
+            android:backgroundTint="@color/md_theme_dark_onBackground">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/senderpic"
+                android:layout_width="@dimen/_60mdp"
+                android:layout_height="@dimen/_60mdp"
+                android:layout_marginStart="14dp"
+                android:layout_marginTop="11dp"
+                android:layout_marginBottom="8dp"
+                android:src="@drawable/einsten"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/postusername"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="3dp"
+                android:text="vivek"
+                android:textColor="@color/md_theme_dark_shadow"
+                android:textSize="@dimen/_19mdp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toEndOf="@+id/senderpic"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/postuserprofession"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:text="President"
+
+                android:textSize="@dimen/_15mdp"
+                app:layout_constraintEnd_toEndOf="@+id/postusername"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toEndOf="@+id/senderpic"
+                app:layout_constraintTop_toBottomOf="@+id/postusername" />
+
+            <Button
+                android:id="@+id/follow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="16dp"
+                android:layout_marginBottom="4dp"
+                android:text="Follow"
+                app:layout_constraintBottom_toBottomOf="@+id/postuserprofession"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.88"
+                app:layout_constraintStart_toEndOf="@+id/postuserprofession" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+
+
+
+
+
+
+
+    </androidx.cardview.widget.CardView>
+</androidx.constraintlayout.widget.ConstraintLayout>
